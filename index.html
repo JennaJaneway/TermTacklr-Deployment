@@ -1,35 +1,123 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TermTacklr Deployment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #000000;
+            color: #1f2933;
+        }
+
+        header {
+            background: #266B1F;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        main {
+            max-width: 850px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background: white;
+            margin-bottom: 20px;
+            padding: 25px;
+            border-radius: 12px;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #266B1F;
+        }
+
+        .button {
+            display: inline-block;
+            background: #266B1F;
+            color: white;
+            padding: 14px 22px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .button:hover {
+            background: #3f6666;
+        }
+
+        ul {
+            line-height: 1.8;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: #6b7280;
+            font-size: 0.9em;
+        }
+    </style>
 </head>
 <body>
+
+<header>
     <h1>TermTacklr</h1>
+    <p>WGU D424 Software Engineering Capstone Mobile Application</p>
+</header>
 
-```
-<p>
-    TermTacklr is a .NET MAUI mobile application created for the WGU D424 Software Engineering Capstone.
-    The app helps users manage academic terms, courses, and assessments.
-</p>
+<main>
+    <section>
+        <h2>About the Application</h2>
+        <p>
+            TermTacklr is a .NET MAUI mobile application designed to help students manage
+            academic terms, courses, and assessments in one organized location.
+        </p>
+    </section>
 
-<h2>Download</h2>
+    <section>
+        <h2>Key Features</h2>
+        <ul>
+            <li>Create, edit, delete, and search terms, courses, and assessments</li>
+            <li>Local SQLite database storage</li>
+            <li>Course and assessment notifications</li>
+            <li>Reports for academic tracking</li>
+            <li>Share Notes functionality</li>
+            <li>Validation, security features, and scalable design elements</li>
+        </ul>
+    </section>
 
-<p>
-    <a href="com.jennagordon.termtacklr-Signed.apk" download>
-        Download TermTacklr Android APK
-    </a>
-</p>
+    <section>
+        <h2>Download the Android APK</h2>
+        <p>
+            Download the signed Android APK file below to install TermTacklr on an Android device.
+        </p>
+        <a class="button" href="com.jennagordon.termtacklr-Signed.apk" download>
+            Download TermTacklr APK
+        </a>
+    </section>
 
-<h2>Deployment Notes</h2>
+    <section>
+        <h2>Deployment Notes</h2>
+        <p>
+            This application is deployed using GitHub Pages as a static hosting site for the Android APK.
+            Containers were not necessary because TermTacklr is a mobile application that uses local SQLite
+            storage and does not require a hosted backend service.
+        </p>
+    </section>
+</main>
 
-<p>
-    This application is deployed using GitHub Pages as a static hosting site for the Android APK.
-    Containers were not necessary because this is a mobile application with local SQLite storage and no hosted backend service.
-</p>
-```
+<footer>
+    <p>Created by Jenna Gordon | WGU Software Engineering Capstone</p>
+</footer>
 
 </body>
-</html>
-
+</html> 
