@@ -1,137 +1,202 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TermTacklr Deployment</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background: #000000;
-            color: #1f2933;
-        }
 
-        header {
-            background: #266B1F;
-            color: white;
-            padding: 40px 20px;
-            text-align: center;
-        }
+```
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #f5f7f6;
+        color: #102820;
+    }
 
-        main {
-            max-width: 850px;
-            margin: 30px auto;
-            padding: 0 20px;
-        }
+    header {
+        background: linear-gradient(135deg, #064e3b, #0f766e);
+        color: white;
+        text-align: center;
+        padding: 50px 20px;
+    }
 
-        section {
-            background: white;
-            margin-bottom: 20px;
-            padding: 25px;
-            border-radius: 12px;
-        }
+    .logo {
+        width: 520px;
+        max-width: 90%;
+        background: white;
+        padding: 18px;
+        border-radius: 18px;
+        box-shadow: 0 10px 30px rgba(0,0,0,.25);
+        margin-bottom: 25px;
+    }
 
-        h1 {
-            margin-bottom: 10px;
-        }
+    .tagline {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin: 10px 0;
+    }
 
-        h2 {
-            color: #266B1F;
-        }
+    .subtitle {
+        max-width: 650px;
+        margin: 15px auto 0;
+        font-size: 1.1rem;
+        line-height: 1.6;
+    }
 
-        .button {
-            display: inline-block;
-            background: #266B1F;
-            color: white;
-            padding: 14px 22px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: bold;
-            margin-top: 10px;
-        }
+    main {
+        max-width: 1050px;
+        margin: 35px auto;
+        padding: 0 20px;
+    }
 
-        .button:hover {
-            background: #3f6666;
-        }
+    section {
+        background: white;
+        border-radius: 16px;
+        padding: 28px;
+        margin-bottom: 24px;
+        box-shadow: 0 6px 18px rgba(0,0,0,.08);
+    }
 
-        .logo{
-            width:420px;
-            max-width:90%;
-            background:white;
-            padding:15px;
-            border-radius:16px;
-            display:block;
-            margin:0 auto 25px;
-            box-shadow:0 8px 24px rgba(0,0,0,.15);
-        }
-        
-        ul {
-            line-height: 1.8;
-        }
+    h2 {
+        color: #064e3b;
+        margin-top: 0;
+    }
 
-        footer {
-            text-align: center;
-            padding: 25px;
-            color: #6b7280;
-            font-size: 0.9em;
-        }
-    </style>
+    .features {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+        gap: 20px;
+    }
+
+    .feature-card {
+        background: #f8faf9;
+        border-radius: 14px;
+        padding: 22px;
+        text-align: center;
+        border: 1px solid #e5e7eb;
+    }
+
+    .feature-card h3 {
+        color: #064e3b;
+        margin-bottom: 8px;
+    }
+
+    .download-button {
+        display: inline-block;
+        background: #15803d;
+        color: white;
+        padding: 15px 24px;
+        border-radius: 10px;
+        text-decoration: none;
+        font-weight: bold;
+        margin-top: 12px;
+    }
+
+    .download-button:hover {
+        background: #166534;
+    }
+
+    .note {
+        background: #ecfdf5;
+        border-left: 5px solid #15803d;
+    }
+
+    footer {
+        background: #064e3b;
+        color: white;
+        text-align: center;
+        padding: 25px;
+        margin-top: 40px;
+    }
+</style>
+```
+
 </head>
+
 <body>
 
 <header>
-    <img src="logo.png"
-         alt="TermTacklr Logo"
-         class="logo">
+    <img src="logo.png" alt="TermTacklr Logo" class="logo">
 
-    <p>Academic Planning Made Simple</p>
+```
+<div class="tagline">Academic Planning Made Simple</div>
+
+<p class="subtitle">
+    TermTacklr is a .NET MAUI mobile application designed to help students manage
+    academic terms, courses, and assessments in one organized location.
+</p>
+```
+
 </header>
 
 <main>
-    <section>
-        <h2>About the Application</h2>
-        <p>
-            TermTacklr is a .NET MAUI mobile application designed to help students manage
-            academic terms, courses, and assessments in one organized location.
-        </p>
-    </section>
 
-    <section>
-        <h2>Key Features</h2>
-        <ul>
-            <li>Create, edit, delete, and search terms, courses, and assessments</li>
-            <li>Local SQLite database storage</li>
-            <li>Course and assessment notifications</li>
-            <li>Reports for academic tracking</li>
-            <li>Share Notes functionality</li>
-            <li>Validation, security features, and scalable design elements</li>
-        </ul>
-    </section>
+```
+<section>
+    <h2>Key Features</h2>
 
-    <section>
-        <h2>Download the Android APK</h2>
-        <p>
-            Download the signed Android APK file below to install TermTacklr on an Android device.
-        </p>
-        <a class="button" href="com.jennagordon.termtacklr-Signed.apk" download>
-            Download TermTacklr APK
-        </a>
-    </section>
+    <div class="features">
+        <div class="feature-card">
+            <h3>Manage Terms</h3>
+            <p>Create, edit, delete, and search academic terms.</p>
+        </div>
 
-    <section>
-        <h2>Deployment Notes</h2>
-        <p>
-            This application is deployed using GitHub Pages as a static hosting site for the Android APK.
-            Containers were not necessary because TermTacklr is a mobile application that uses local SQLite
-            storage and does not require a hosted backend service.
-        </p>
-    </section>
+        <div class="feature-card">
+            <h3>Manage Courses</h3>
+            <p>Track course details, instructor information, status, and notes.</p>
+        </div>
+
+        <div class="feature-card">
+            <h3>Manage Assessments</h3>
+            <p>Add and track objective and performance assessments.</p>
+        </div>
+
+        <div class="feature-card">
+            <h3>Notifications</h3>
+            <p>Receive reminders for upcoming course and assessment dates.</p>
+        </div>
+
+        <div class="feature-card">
+            <h3>Reports</h3>
+            <p>Generate reports to track academic progress.</p>
+        </div>
+
+        <div class="feature-card">
+            <h3>Share Notes</h3>
+            <p>Share course notes using built-in mobile sharing features.</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Download the Android APK</h2>
+    <p>
+        Download the signed Android APK file below to install TermTacklr on an Android device.
+    </p>
+
+    <a class="download-button" href="com.jennagordon.termtacklr-Signed.apk" download>
+        Download TermTacklr APK
+    </a>
+</section>
+
+<section class="note">
+    <h2>Deployment Notes</h2>
+    <p>
+        This application is deployed using GitHub Pages as a static hosting site for the Android APK.
+        Containers were not necessary because TermTacklr is a mobile application that uses local SQLite
+        storage and does not require a hosted backend service.
+    </p>
+</section>
+```
+
 </main>
 
 <footer>
-    <p>Created by Jenna Gordon | WGU Software Engineering Capstone</p>
+    <p>Created by Jenna Gordon | WGU D424 Software Engineering Capstone</p>
 </footer>
 
 </body>
-</html> 
+</html>
+ 
